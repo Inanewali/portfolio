@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Syed Waliullah | Portfolio</title>
+    <title>Syed Waliullah | Software & Data Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Syed Waliullah — software projects, skills, and contact."
+      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, backend systems, and reporting."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,6 +22,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <a class="btn" href="#contact">Contact</a>
       </nav>
@@ -31,13 +32,14 @@
       <!-- HERO -->
       <section class="hero">
         <div class="heroText">
-          <p class="pill">Software Engineering • Backend • Testing</p>
+          <p class="pill">Software Engineering • Data Analytics • Backend</p>
 
           <h1>Hi, I’m <span>Syed Waliullah</span>.</h1>
 
           <p class="sub">
-            I build reliable, clean software with a focus on backend development and testing. Below are
-            some of my projects pulled directly from my GitHub.
+            Software Engineering student at the University of Calgary with hands-on experience in
+            data analytics, reporting, and backend systems using Python, SQL, and Power BI.
+            I focus on building reliable, well-documented, and data-driven systems.
           </p>
 
           <div class="heroCtas">
@@ -47,17 +49,17 @@
 
           <div class="linksRow">
             <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="mailto:waliullah2001@gmail.com">Email</a>
+            <a href="mailto:syed.waliullah@ucalgary.ca">Email</a>
           </div>
         </div>
 
         <div class="heroCard">
           <div class="avatar" aria-hidden="true">👤</div>
           <div>
-            <h2 class="cardTitle">Quick intro</h2>
+            <h2 class="cardTitle">Quick profile</h2>
             <p class="cardText">
-              Software Engineering student in Calgary. Interested in backend systems, testing, and building
-              projects that are practical and well-structured.
+              Interested in data quality, analytics pipelines, backend systems, and turning raw data
+              into useful insights through clean, testable code.
             </p>
           </div>
         </div>
@@ -67,12 +69,81 @@
       <section id="projects" class="section">
         <div class="sectionHead">
           <h2>Projects</h2>
-          <p>Automatically loaded from my GitHub (latest updated repos).</p>
+          <p>Selected projects based on my resume and GitHub work.</p>
         </div>
 
-        <!-- Auto-filled by script.js -->
-        <div class="grid" id="projects-grid">
-          <p class="muted">Loading projects...</p>
+        <div class="grid">
+          <article class="project">
+            <h3>Business Operations Reporting System</h3>
+            <p class="muted">
+              End-to-end reporting system for ingesting, cleaning, and consolidating operational data.
+            </p>
+            <ul class="bullets">
+              <li>Built data cleaning and validation pipelines in Python (Pandas)</li>
+              <li>Designed T-SQL queries and reports for business analytics</li>
+              <li>Automated extraction and reporting to reduce manual work</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>SQL Server</span><span>T-SQL</span><span>Excel</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Dish Craft – Recipe Application</h3>
+            <p class="muted">
+              Full-stack web app that generates personalized recipes using an LLM-based recommendation engine.
+            </p>
+            <ul class="bullets">
+              <li>Built backend with Flask and Python</li>
+              <li>Implemented data cleaning and structured API outputs</li>
+              <li>Added testing and feedback loops to improve result quality</li>
+            </ul>
+            <div class="tags">
+              <span>Flask</span><span>Python</span><span>Bootstrap</span><span>OpenAI API</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Network Intrusion Detection System</h3>
+            <p class="muted">
+              Machine learning system for classifying network traffic using the NSL-KDD dataset.
+            </p>
+            <ul class="bullets">
+              <li>Processed and analyzed data with Pandas and NumPy</li>
+              <li>Built Decision Tree and Random Forest models in scikit-learn</li>
+              <li>Visualized performance and documented preprocessing steps</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Flight Management System</h3>
+            <p class="muted">
+              Backend-focused system with SQL database design and analytical reporting.
+            </p>
+            <ul class="bullets">
+              <li>Designed relational SQL backend and reporting queries</li>
+              <li>Documented data structures and system flows</li>
+              <li>Generated reports to validate system correctness</li>
+            </ul>
+            <div class="tags">
+              <span>C++</span><span>SQL</span><span>Backend</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -80,26 +151,48 @@
       <section id="skills" class="section">
         <div class="sectionHead">
           <h2>Skills</h2>
-          <p>Tools and technologies I’ve worked with.</p>
+          <p>Based directly on my coursework and work experience.</p>
         </div>
 
         <div class="skills">
           <div class="skillCard">
-            <h3>Languages</h3>
-            <p class="muted">Python, Java, C/C++, SQL, JavaScript, Kotlin</p>
+            <h3>Programming</h3>
+            <p class="muted">Python, SQL, C++, C, C#, Java, JavaScript, HTML/CSS, Flask</p>
           </div>
           <div class="skillCard">
-            <h3>Frameworks</h3>
-            <p class="muted">Flask, React, Bootstrap</p>
+            <h3>Data & Analytics</h3>
+            <p class="muted">Pandas, NumPy, Power BI (DAX, dashboards), Data Cleaning, EDA, Visualization</p>
           </div>
           <div class="skillCard">
-            <h3>Tools</h3>
-            <p class="muted">Git/GitHub, Docker, Postman, Linux</p>
+            <h3>Databases</h3>
+            <p class="muted">SQL Server, MySQL, SQLite, Data Modeling, Query Optimization</p>
           </div>
           <div class="skillCard">
-            <h3>Testing</h3>
-            <p class="muted">Unit testing, integration testing, test case design</p>
+            <h3>Machine Learning</h3>
+            <p class="muted">Scikit-learn, Feature Engineering, Model Evaluation</p>
           </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="sectionHead">
+          <h2>Experience</h2>
+          <p>Relevant industry experience.</p>
+        </div>
+
+        <div class="about">
+          <p>
+            <strong>Data Analyst Intern – Solar Car (Sep 2023 – May 2024)</strong><br/>
+            Worked on extracting, transforming, and analyzing engineering telemetry data using Python (Pandas, NumPy).
+            Built and maintained Power BI dashboards, ensured data quality through validation and cleaning, and collaborated
+            with cross-functional teams on data requirements and reporting.
+          </p>
+          <p>
+            <strong>Software Engineer Intern – AC-Robotics, Calgary (Sep 2021 – Apr 2022)</strong><br/>
+            Developed Python automation scripts for robotics control and data collection, improved data logging using
+            structured database storage and SQL analytics, and worked with engineering teams to improve testing and reporting.
+          </p>
         </div>
       </section>
 
@@ -107,14 +200,14 @@
       <section id="about" class="section">
         <div class="sectionHead">
           <h2>About</h2>
-          <p>Short and real.</p>
+          <p>Short and honest.</p>
         </div>
 
         <div class="about">
           <p>
-            I’m Syed Waliullah, a Software Engineering student in Calgary. I like building backend-focused
-            projects and writing code that’s clean, testable, and easy to maintain. I’m also interested in
-            improving product quality through testing and solid design.
+            I’m a Software Engineering student at the University of Calgary (Expected 2027) with a strong interest in
+            data analytics, backend systems, and data quality. I enjoy working on projects that involve cleaning,
+            transforming, and analyzing data, and turning that into reliable reports and systems that people can trust.
           </p>
         </div>
       </section>
@@ -128,8 +221,8 @@
 
         <div class="contactCard">
           <p class="muted">Email works best:</p>
-          <a class="btn" href="mailto:waliullah2001@gmail.com">waliullah2001@gmail.com</a>
-          <p class="small muted">You can also message me on GitHub.</p>
+          <a class="btn" href="mailto:syed.waliullah@ucalgary.ca">syed.waliullah@ucalgary.ca</a>
+          <p class="small muted">Phone: +1 (403) 397-4480</p>
         </div>
       </section>
     </main>
