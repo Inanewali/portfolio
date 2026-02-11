@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name | Portfolio</title>
-    <meta name="description" content="Portfolio of Your Name — projects, skills, and contact." />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Syed Waliullah | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Syed Waliullah — software projects, skills, and contact."
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header class="header">
-      <a class="logo" href="#top">YN</a>
+      <a class="logo" href="#top" aria-label="Home">SW</a>
 
       <button class="menuBtn" aria-label="Open menu" aria-expanded="false">
         ☰
@@ -28,10 +31,13 @@
       <!-- HERO -->
       <section class="hero">
         <div class="heroText">
-          <p class="pill">Software • Backend • Testing</p>
-          <h1>Hi, I’m <span>Your Name</span>.</h1>
+          <p class="pill">Software Engineering • Backend • Testing</p>
+
+          <h1>Hi, I’m <span>Syed Waliullah</span>.</h1>
+
           <p class="sub">
-            I build reliable software and clean user experiences. Here are some projects I’m proud of.
+            I build reliable, clean software with a focus on backend development and testing. Below are
+            some of my projects pulled directly from my GitHub.
           </p>
 
           <div class="heroCtas">
@@ -40,9 +46,8 @@
           </div>
 
           <div class="linksRow">
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:you@email.com">Email</a>
+            <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:waliullah2001@gmail.com">Email</a>
           </div>
         </div>
 
@@ -51,7 +56,8 @@
           <div>
             <h2 class="cardTitle">Quick intro</h2>
             <p class="cardText">
-              Replace this with 2–3 lines: what you do, what you’re learning, and what roles you want.
+              Software Engineering student in Calgary. Interested in backend systems, testing, and building
+              projects that are practical and well-structured.
             </p>
           </div>
         </div>
@@ -61,62 +67,12 @@
       <section id="projects" class="section">
         <div class="sectionHead">
           <h2>Projects</h2>
-          <p>Pick 2–4 strong projects. Add impact + tech stack.</p>
+          <p>Automatically loaded from my GitHub (latest updated repos).</p>
         </div>
 
-        <div class="grid">
-          <article class="project">
-            <h3>Project Name</h3>
-            <p class="muted">
-              One-liner: what it does + who it helps.
-            </p>
-            <ul class="bullets">
-              <li>Impact/result (faster, reduced errors, improved UX, etc.)</li>
-              <li>What you built (API, auth, UI, testing, deployment)</li>
-              <li>Interesting detail (caching, CI, data model, design)</li>
-            </ul>
-            <div class="tags">
-              <span>Flask</span><span>PostgreSQL</span><span>Docker</span>
-            </div>
-            <div class="projectLinks">
-              <a href="#" target="_blank" rel="noreferrer">Live</a>
-              <a href="#" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h3>Project Name</h3>
-            <p class="muted">One-liner: what it does + why it matters.</p>
-            <ul class="bullets">
-              <li>Key feature you implemented</li>
-              <li>Testing/quality work you did</li>
-              <li>Deployment or performance improvement</li>
-            </ul>
-            <div class="tags">
-              <span>React</span><span>TypeScript</span><span>Firebase</span>
-            </div>
-            <div class="projectLinks">
-              <a href="#" target="_blank" rel="noreferrer">Live</a>
-              <a href="#" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <h3>Project Name</h3>
-            <p class="muted">One-liner: what it does + outcome.</p>
-            <ul class="bullets">
-              <li>What problem it solves</li>
-              <li>How you approached it</li>
-              <li>Tech choices and why</li>
-            </ul>
-            <div class="tags">
-              <span>Java</span><span>JUnit</span><span>UML</span>
-            </div>
-            <div class="projectLinks">
-              <a href="#" target="_blank" rel="noreferrer">Live</a>
-              <a href="#" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
+        <!-- Auto-filled by script.js -->
+        <div class="grid" id="projects-grid">
+          <p class="muted">Loading projects...</p>
         </div>
       </section>
 
@@ -124,25 +80,25 @@
       <section id="skills" class="section">
         <div class="sectionHead">
           <h2>Skills</h2>
-          <p>Keep it honest and specific.</p>
+          <p>Tools and technologies I’ve worked with.</p>
         </div>
 
         <div class="skills">
           <div class="skillCard">
             <h3>Languages</h3>
-            <p class="muted">Python, Java, C/C++, SQL, JavaScript</p>
+            <p class="muted">Python, Java, C/C++, SQL, JavaScript, Kotlin</p>
           </div>
           <div class="skillCard">
             <h3>Frameworks</h3>
-            <p class="muted">Flask, React, Node, Bootstrap</p>
+            <p class="muted">Flask, React, Bootstrap</p>
           </div>
           <div class="skillCard">
             <h3>Tools</h3>
-            <p class="muted">Git, Docker, Postman, Linux, CI/CD</p>
+            <p class="muted">Git/GitHub, Docker, Postman, Linux</p>
           </div>
           <div class="skillCard">
             <h3>Testing</h3>
-            <p class="muted">Unit, Integration, Black-box, White-box</p>
+            <p class="muted">Unit testing, integration testing, test case design</p>
           </div>
         </div>
       </section>
@@ -151,13 +107,14 @@
       <section id="about" class="section">
         <div class="sectionHead">
           <h2>About</h2>
-          <p>A short story beats a long bio.</p>
+          <p>Short and real.</p>
         </div>
 
         <div class="about">
           <p>
-            Write 4–6 lines about: what you’re studying, what you enjoy building, and what roles you want.
-            Add 1 personal detail (hiking, DJing, etc.) so it feels human.
+            I’m Syed Waliullah, a Software Engineering student in Calgary. I like building backend-focused
+            projects and writing code that’s clean, testable, and easy to maintain. I’m also interested in
+            improving product quality through testing and solid design.
           </p>
         </div>
       </section>
@@ -166,19 +123,19 @@
       <section id="contact" class="section">
         <div class="sectionHead">
           <h2>Contact</h2>
-          <p>Best way to reach you.</p>
+          <p>Best way to reach me.</p>
         </div>
 
         <div class="contactCard">
           <p class="muted">Email works best:</p>
-          <a class="btn" href="mailto:you@email.com">you@email.com</a>
-          <p class="small muted">Or DM on LinkedIn.</p>
+          <a class="btn" href="mailto:waliullah2001@gmail.com">waliullah2001@gmail.com</a>
+          <p class="small muted">You can also message me on GitHub.</p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Your Name. Built with HTML/CSS.</p>
+      <p>© <span id="year"></span> Syed Waliullah. Built with HTML/CSS.</p>
     </footer>
 
     <script src="script.js"></script>
