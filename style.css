@@ -97,7 +97,7 @@ main{ max-width:1000px; margin:0 auto; padding:24px 18px 60px; }
 .sub{ color:var(--muted); font-size:16px; line-height:1.6; max-width:55ch; }
 
 .heroCtas{ display:flex; gap:10px; margin:18px 0 10px; flex-wrap:wrap; }
-.linksRow{ display:flex; gap:14px; margin-top:12px; color:var(--muted); }
+.linksRow{ display:flex; gap:14px; margin-top:12px; color:var(--muted); flex-wrap:wrap; }
 
 .heroCard{
   border:1px solid var(--border);
@@ -143,9 +143,6 @@ main{ max-width:1000px; margin:0 auto; padding:24px 18px 60px; }
 
 .project h3{ margin:0; font-size:18px; }
 .muted{ color:var(--muted); line-height:1.6; margin:0; }
-
-.bullets{ margin:0; padding-left:18px; color:var(--text); }
-.bullets li{ margin:6px 0; color:var(--muted); }
 
 .tags{ display:flex; flex-wrap:wrap; gap:8px; }
 .tags span{
