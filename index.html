@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name | Portfolio</title>
+    <meta name="description" content="Portfolio of Your Name — projects, skills, and contact." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo" href="#top">YN</a>
+
+      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="heroText">
+          <p class="pill">Software • Backend • Testing</p>
+          <h1>Hi, I’m <span>Your Name</span>.</h1>
+          <p class="sub">
+            I build reliable software and clean user experiences. Here are some projects I’m proud of.
+          </p>
+
+          <div class="heroCtas">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btnGhost" href="./resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+          </div>
+
+          <div class="linksRow">
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:you@email.com">Email</a>
+          </div>
+        </div>
+
+        <div class="heroCard">
+          <div class="avatar" aria-hidden="true">👤</div>
+          <div>
+            <h2 class="cardTitle">Quick intro</h2>
+            <p class="cardText">
+              Replace this with 2–3 lines: what you do, what you’re learning, and what roles you want.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="sectionHead">
+          <h2>Projects</h2>
+          <p>Pick 2–4 strong projects. Add impact + tech stack.</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <h3>Project Name</h3>
+            <p class="muted">
+              One-liner: what it does + who it helps.
+            </p>
+            <ul class="bullets">
+              <li>Impact/result (faster, reduced errors, improved UX, etc.)</li>
+              <li>What you built (API, auth, UI, testing, deployment)</li>
+              <li>Interesting detail (caching, CI, data model, design)</li>
+            </ul>
+            <div class="tags">
+              <span>Flask</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Project Name</h3>
+            <p class="muted">One-liner: what it does + why it matters.</p>
+            <ul class="bullets">
+              <li>Key feature you implemented</li>
+              <li>Testing/quality work you did</li>
+              <li>Deployment or performance improvement</li>
+            </ul>
+            <div class="tags">
+              <span>React</span><span>TypeScript</span><span>Firebase</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Project Name</h3>
+            <p class="muted">One-liner: what it does + outcome.</p>
+            <ul class="bullets">
+              <li>What problem it solves</li>
+              <li>How you approached it</li>
+              <li>Tech choices and why</li>
+            </ul>
+            <div class="tags">
+              <span>Java</span><span>JUnit</span><span>UML</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="sectionHead">
+          <h2>Skills</h2>
+          <p>Keep it honest and specific.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skillCard">
+            <h3>Languages</h3>
+            <p class="muted">Python, Java, C/C++, SQL, JavaScript</p>
+          </div>
+          <div class="skillCard">
+            <h3>Frameworks</h3>
+            <p class="muted">Flask, React, Node, Bootstrap</p>
+          </div>
+          <div class="skillCard">
+            <h3>Tools</h3>
+            <p class="muted">Git, Docker, Postman, Linux, CI/CD</p>
+          </div>
+          <div class="skillCard">
+            <h3>Testing</h3>
+            <p class="muted">Unit, Integration, Black-box, White-box</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="sectionHead">
+          <h2>About</h2>
+          <p>A short story beats a long bio.</p>
+        </div>
+
+        <div class="about">
+          <p>
+            Write 4–6 lines about: what you’re studying, what you enjoy building, and what roles you want.
+            Add 1 personal detail (hiking, DJing, etc.) so it feels human.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <p>Best way to reach you.</p>
+        </div>
+
+        <div class="contactCard">
+          <p class="muted">Email works best:</p>
+          <a class="btn" href="mailto:you@email.com">you@email.com</a>
+          <p class="small muted">Or DM on LinkedIn.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name. Built with HTML/CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
