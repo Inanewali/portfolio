@@ -6,7 +6,7 @@
     <title>Syed Waliullah | Software & Data Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, backend systems, and reporting."
+      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, backend systems, and machine learning."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -32,14 +32,14 @@
       <!-- HERO -->
       <section class="hero">
         <div class="heroText">
-          <p class="pill">Software Engineering • Data Analytics • Backend</p>
+          <p class="pill">Software Engineering • Data Analytics • Machine Learning</p>
 
           <h1>Hi, I’m <span>Syed Waliullah</span>.</h1>
 
           <p class="sub">
             Software Engineering student at the University of Calgary with hands-on experience in
-            data analytics, reporting, and backend systems using Python, SQL, and Power BI.
-            I focus on building reliable, well-documented, and data-driven systems.
+            data analytics, backend systems, and machine learning. I focus on building reliable,
+            well-documented, and data-driven systems using Python and SQL.
           </p>
 
           <div class="heroCtas">
@@ -58,8 +58,8 @@
           <div>
             <h2 class="cardTitle">Quick profile</h2>
             <p class="cardText">
-              Interested in data quality, analytics pipelines, backend systems, and turning raw data
-              into useful insights through clean, testable code.
+              Interested in data quality, analytics pipelines, backend systems, and applying machine
+              learning to real-world problems like forecasting and classification.
             </p>
           </div>
         </div>
@@ -69,19 +69,80 @@
       <section id="projects" class="section">
         <div class="sectionHead">
           <h2>Projects</h2>
-          <p>Selected projects based on my resume and GitHub work.</p>
+          <p>Selected academic and personal projects.</p>
         </div>
 
         <div class="grid">
+          <!-- ETF Forecasting -->
+          <article class="project">
+            <h3>Quantitative ETF Forecasting System</h3>
+            <p class="muted">
+              Machine learning and time-series forecasting system for predicting ETF performance using historical market data.
+            </p>
+            <ul class="bullets">
+              <li>Collected and preprocessed ETF price data from Yahoo Finance</li>
+              <li>Built forecasting models including ARIMA, regression, and ML approaches</li>
+              <li>Evaluated models using error metrics and trend analysis</li>
+              <li>Implemented backtesting and performance comparison workflows</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Time Series</span><span>Machine Learning</span><span>Forecasting</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/irajak/quantitative-etf-forecasting" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Movie Sentiment -->
+          <article class="project">
+            <h3>Movie Review Sentiment Analysis</h3>
+            <p class="muted">
+              Natural language processing system that classifies movie reviews as positive or negative.
+            </p>
+            <ul class="bullets">
+              <li>Cleaned and preprocessed text data using tokenization and normalization</li>
+              <li>Built and evaluated ML classification models</li>
+              <li>Visualized performance metrics such as accuracy and precision</li>
+              <li>Created reproducible scripts for training and evaluation</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>NLP</span><span>Scikit-learn</span><span>Pandas</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Inanewali/Movie-Review-Sentiment-Analysis" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Dishcraft -->
+          <article class="project">
+            <h3>Dishcraft – Recipe Recommendation App</h3>
+            <p class="muted">
+              Full-stack web application that generates personalized recipes using backend logic and data processing.
+            </p>
+            <ul class="bullets">
+              <li>Built backend API logic in Python with Flask</li>
+              <li>Implemented data cleaning and structured outputs for recipes</li>
+              <li>Designed responsive frontend for user interaction</li>
+              <li>Added error handling and feedback loops to improve results</li>
+            </ul>
+            <div class="tags">
+              <span>Flask</span><span>Python</span><span>HTML/CSS</span><span>API</span>
+            </div>
+            <div class="projectLinks">
+              <a href="https://github.com/Maheen21/Dishcraft" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Business Reporting -->
           <article class="project">
             <h3>Business Operations Reporting System</h3>
             <p class="muted">
               End-to-end reporting system for ingesting, cleaning, and consolidating operational data.
             </p>
             <ul class="bullets">
-              <li>Built data cleaning and validation pipelines in Python (Pandas)</li>
-              <li>Designed T-SQL queries and reports for business analytics</li>
-              <li>Automated extraction and reporting to reduce manual work</li>
+              <li>Built data cleaning and validation pipelines using Python (Pandas)</li>
+              <li>Designed T-SQL queries and reports for analytics</li>
+              <li>Automated data extraction and reporting workflows</li>
             </ul>
             <div class="tags">
               <span>Python</span><span>SQL Server</span><span>T-SQL</span><span>Excel</span>
@@ -91,32 +152,15 @@
             </div>
           </article>
 
-          <article class="project">
-            <h3>Dish Craft – Recipe Application</h3>
-            <p class="muted">
-              Full-stack web app that generates personalized recipes using an LLM-based recommendation engine.
-            </p>
-            <ul class="bullets">
-              <li>Built backend with Flask and Python</li>
-              <li>Implemented data cleaning and structured API outputs</li>
-              <li>Added testing and feedback loops to improve result quality</li>
-            </ul>
-            <div class="tags">
-              <span>Flask</span><span>Python</span><span>Bootstrap</span><span>OpenAI API</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
+          <!-- NIDS -->
           <article class="project">
             <h3>Network Intrusion Detection System</h3>
             <p class="muted">
-              Machine learning system for classifying network traffic using the NSL-KDD dataset.
+              Machine learning system for detecting malicious network traffic using the NSL-KDD dataset.
             </p>
             <ul class="bullets">
               <li>Processed and analyzed data with Pandas and NumPy</li>
-              <li>Built Decision Tree and Random Forest models in scikit-learn</li>
+              <li>Built Decision Tree and Random Forest models</li>
               <li>Visualized performance and documented preprocessing steps</li>
             </ul>
             <div class="tags">
@@ -127,6 +171,7 @@
             </div>
           </article>
 
+          <!-- Flight Management -->
           <article class="project">
             <h3>Flight Management System</h3>
             <p class="muted">
@@ -151,7 +196,7 @@
       <section id="skills" class="section">
         <div class="sectionHead">
           <h2>Skills</h2>
-          <p>Based directly on my coursework and work experience.</p>
+          <p>Based on coursework and work experience.</p>
         </div>
 
         <div class="skills">
@@ -161,7 +206,7 @@
           </div>
           <div class="skillCard">
             <h3>Data & Analytics</h3>
-            <p class="muted">Pandas, NumPy, Power BI (DAX, dashboards), Data Cleaning, EDA, Visualization</p>
+            <p class="muted">Pandas, NumPy, Power BI, Data Cleaning, EDA, Visualization</p>
           </div>
           <div class="skillCard">
             <h3>Databases</h3>
@@ -178,20 +223,20 @@
       <section id="experience" class="section">
         <div class="sectionHead">
           <h2>Experience</h2>
-          <p>Relevant industry experience.</p>
+          <p>Industry experience.</p>
         </div>
 
         <div class="about">
           <p>
             <strong>Data Analyst Intern – Solar Car (Sep 2023 – May 2024)</strong><br/>
-            Worked on extracting, transforming, and analyzing engineering telemetry data using Python (Pandas, NumPy).
-            Built and maintained Power BI dashboards, ensured data quality through validation and cleaning, and collaborated
-            with cross-functional teams on data requirements and reporting.
+            Extracted, transformed, and analyzed engineering telemetry data using Python (Pandas, NumPy). Built Power BI
+            dashboards, ensured data quality through validation and cleaning, and collaborated with cross-functional teams
+            on reporting and data requirements.
           </p>
           <p>
             <strong>Software Engineer Intern – AC-Robotics, Calgary (Sep 2021 – Apr 2022)</strong><br/>
-            Developed Python automation scripts for robotics control and data collection, improved data logging using
-            structured database storage and SQL analytics, and worked with engineering teams to improve testing and reporting.
+            Developed Python automation scripts for robotics control and data collection, improved data logging using SQL
+            and structured storage, and worked with engineering teams to improve testing and reporting.
           </p>
         </div>
       </section>
@@ -206,8 +251,8 @@
         <div class="about">
           <p>
             I’m a Software Engineering student at the University of Calgary (Expected 2027) with a strong interest in
-            data analytics, backend systems, and data quality. I enjoy working on projects that involve cleaning,
-            transforming, and analyzing data, and turning that into reliable reports and systems that people can trust.
+            data analytics, backend systems, and machine learning. I enjoy building systems that clean, transform, and
+            analyze data and turn it into useful insights through reliable software.
           </p>
         </div>
       </section>
