@@ -6,7 +6,7 @@
     <title>Syed Waliullah | Software & Data Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, backend systems, and machine learning."
+      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, Power BI, SQL, and machine learning."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,9 +15,7 @@
     <header class="header">
       <a class="logo" href="#top" aria-label="Home">SW</a>
 
-      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">
-        ☰
-      </button>
+      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
 
       <nav class="nav" aria-label="Primary">
         <a href="#projects">Projects</a>
@@ -37,9 +35,10 @@
           <h1>Hi, I’m <span>Syed Waliullah</span>.</h1>
 
           <p class="sub">
-            Software Engineering student at the University of Calgary with hands-on experience in
-            data analytics, backend systems, and machine learning. I focus on building reliable,
-            well-documented, and data-driven systems using Python and SQL.
+            Software Engineering student at the University of Calgary with hands‑on experience
+            building analytics pipelines and dashboards in <b>Power BI</b>, data processing in
+            <b>Python / SQL</b>, and applied <b>machine learning</b>. I focus on clean data
+            ingestion, reproducible analysis, and practical insights that drive decisions.
           </p>
 
           <div class="heroCtas">
@@ -59,9 +58,31 @@
           <div>
             <h2 class="cardTitle">Quick profile</h2>
             <p class="cardText">
-              Interested in data quality, analytics pipelines, backend systems, and applying machine
-              learning to real-world problems like forecasting and classification.
+              Interested in data quality, analytics pipelines, KPI reporting, and applying ML to
+              real‑world problems (forecasting, classification, and anomaly detection).
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS: METRICS -->
+      <section class="section">
+        <div class="metricsStrip" role="list" aria-label="Impact highlights">
+          <div class="metric" role="listitem">
+            <div class="metricVal">40–60%</div>
+            <div class="metricLabel">faster data prep (Power Query)</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metricVal">&lt;5%</div>
+            <div class="metricLabel">high‑risk journals flagged</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metricVal">30–50%</div>
+            <div class="metricLabel">less manual journal testing</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="metricVal">~50%</div>
+            <div class="metricLabel">faster audit sampling</div>
           </div>
         </div>
       </section>
@@ -70,47 +91,60 @@
       <section id="projects" class="section">
         <div class="sectionHead">
           <h2>Projects</h2>
-          <p>Selected academic and personal projects.</p>
+          <p>Selected academic, professional, and personal projects.</p>
         </div>
 
         <div class="grid">
+          <!-- Automated Audit Sampling (In Progress) -->
+          <article class="project">
+            <h3>Automated Audit Sampling Tool (In Progress)</h3>
+            <p class="muted">
+              Prototype tool to automate substantive testing samples using rules and stratification.
+            </p>
+            <ul class="bullets">
+              <li>Processes <b>10k–50k+</b> transactions for targeted & random sampling.</li>
+              <li>Implements thresholds, value‑band stratification, risk‑based rules.</li>
+              <li>Ensures <b>100% traceability</b> to source ledgers; targeting <b>~50%</b> faster sampling.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Excel</span><span>ETL</span><span>Audit</span>
+            </div>
+          </article>
+
           <!-- ETF Forecasting -->
           <article class="project">
             <h3>Quantitative ETF Forecasting System</h3>
             <p class="muted">
-              Machine learning and time-series forecasting system for predicting ETF performance using historical market data.
+              ML & time‑series forecasting for sector ETFs; backtesting for strategy viability.
             </p>
             <ul class="bullets">
-              <li>Collected and preprocessed ETF price data from Yahoo Finance</li>
-              <li>Built forecasting models including ARIMA, regression, and ML approaches</li>
-              <li>Evaluated models using error metrics and trend analysis</li>
-              <li>Implemented backtesting and performance comparison workflows</li>
+              <li>Automated data from Yahoo Finance; modular pipeline for EDA → features → models.</li>
+              <li>Models: ARIMA, LSTM, regression & tree‑based classifiers; comparative backtesting.</li>
+              <li>Reproducible scripts and metrics reporting.</li>
             </ul>
             <div class="tags">
-              <span>Python</span><span>Time Series</span><span>Machine Learning</span><span>Forecasting</span>
+              <span>Python</span><span>Time Series</span><span>ML</span><span>Forecasting</span>
             </div>
             <div class="projectLinks">
               <a href="https://github.com/irajak/quantitative-etf-forecasting" target="_blank" rel="noreferrer">Code</a>
             </div>
           </article>
 
-          <!-- Movie Sentiment -->
+          <!-- Business Reporting -->
           <article class="project">
-            <h3>Movie Review Sentiment Analysis</h3>
+            <h3>Business Operations Reporting System</h3>
             <p class="muted">
-              Natural language processing system that classifies movie reviews as positive or negative.
+              End‑to‑end reporting for ingesting, cleaning, validating, and consolidating ops data.
             </p>
             <ul class="bullets">
-              <li>Cleaned and preprocessed text data using tokenization and normalization</li>
-              <li>Built and evaluated ML classification models</li>
-              <li>Visualized performance metrics such as accuracy and precision</li>
-              <li>Created reproducible scripts for training and evaluation</li>
+              <li>Python (Pandas) data quality rules & validation; repeatable ETL flows.</li>
+              <li>T‑SQL reports and scheduled analytics; reduced manual reporting effort.</li>
             </ul>
             <div class="tags">
-              <span>Python</span><span>NLP</span><span>Scikit-learn</span><span>Pandas</span>
+              <span>Python</span><span>SQL Server</span><span>T‑SQL</span><span>Excel</span>
             </div>
             <div class="projectLinks">
-              <a href="https://github.com/Inanewali/Movie-Review-Sentiment-Analysis" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
             </div>
           </article>
 
@@ -118,13 +152,11 @@
           <article class="project">
             <h3>Dishcraft – Recipe Recommendation App</h3>
             <p class="muted">
-              Full-stack web application that generates personalized recipes using backend logic and data processing.
+              Full‑stack Flask app with structured outputs and feedback loops for quality.
             </p>
             <ul class="bullets">
-              <li>Built backend API logic in Python with Flask</li>
-              <li>Implemented data cleaning and structured outputs for recipes</li>
-              <li>Designed responsive frontend for user interaction</li>
-              <li>Added error handling and feedback loops to improve results</li>
+              <li>Backend API in Flask; cleaned & normalized model outputs.</li>
+              <li>Responsive UI; error handling and iterative improvement.</li>
             </ul>
             <div class="tags">
               <span>Flask</span><span>Python</span><span>HTML/CSS</span><span>API</span>
@@ -134,41 +166,18 @@
             </div>
           </article>
 
-          <!-- Business Reporting -->
-          <article class="project">
-            <h3>Business Operations Reporting System</h3>
-            <p class="muted">
-              End-to-end reporting system for ingesting, cleaning, and consolidating operational data.
-            </p>
-            <ul class="bullets">
-              <li>Built data cleaning and validation pipelines using Python (Pandas)</li>
-              <li>Designed T-SQL queries and reports for analytics</li>
-              <li>Automated data extraction and reporting workflows</li>
-            </ul>
-            <div class="tags">
-              <span>Python</span><span>SQL Server</span><span>T-SQL</span><span>Excel</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
           <!-- NIDS -->
           <article class="project">
             <h3>Network Intrusion Detection System</h3>
             <p class="muted">
-              Machine learning system for detecting malicious network traffic using the NSL-KDD dataset.
+              ML models to detect malicious traffic on the NSL‑KDD dataset.
             </p>
             <ul class="bullets">
-              <li>Processed and analyzed data with Pandas and NumPy</li>
-              <li>Built Decision Tree and Random Forest models</li>
-              <li>Visualized performance and documented preprocessing steps</li>
+              <li>Preprocessed data with Pandas/NumPy; built Decision Tree & Random Forest.</li>
+              <li>Performance visualization, documentation, and reproducibility.</li>
             </ul>
             <div class="tags">
-              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
+              <span>Python</span><span>Scikit‑learn</span><span>Pandas</span><span>ML</span>
             </div>
           </article>
 
@@ -176,12 +185,11 @@
           <article class="project">
             <h3>Flight Management System</h3>
             <p class="muted">
-              Backend-focused system with SQL database design and analytical reporting.
+              Backend‑oriented system with SQL database design and analytical reporting.
             </p>
             <ul class="bullets">
-              <li>Designed relational SQL backend and reporting queries</li>
-              <li>Documented data structures and system flows</li>
-              <li>Generated reports to validate system correctness</li>
+              <li>Relational schema & reporting queries; documented structures and flows.</li>
+              <li>Analytical reports to validate system correctness.</li>
             </ul>
             <div class="tags">
               <span>C++</span><span>SQL</span><span>Backend</span>
@@ -207,7 +215,7 @@
           </div>
           <div class="skillCard">
             <h3>Data & Analytics</h3>
-            <p class="muted">Pandas, NumPy, Power BI, Data Cleaning, EDA, Visualization</p>
+            <p class="muted">Pandas, NumPy, Power BI (DAX, dashboards), Data Cleaning, EDA, Visualization</p>
           </div>
           <div class="skillCard">
             <h3>Databases</h3>
@@ -215,158 +223,134 @@
           </div>
           <div class="skillCard">
             <h3>Machine Learning</h3>
-            <p class="muted">Scikit-learn, Feature Engineering, Model Evaluation</p>
+            <p class="muted">Scikit‑learn, Feature Engineering, Model Evaluation</p>
+          </div>
+          <div class="skillCard">
+            <h3>Business Tools</h3>
+            <p class="muted">Excel (PivotTables, Power Query), PowerPoint, Power Automate</p>
           </div>
         </div>
       </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <div class="sectionHead">
-    <h2>Experience</h2>
-    <p>Professional, customer-facing, and leadership experience.</p>
-  </div>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="sectionHead">
+          <h2>Experience</h2>
+          <p>Professional, customer‑facing, and leadership experience.</p>
+        </div>
 
-  <!-- Industry / Technical -->
-  <h3 class="subSectionTitle">Industry & Technical</h3>
-  <div class="expGrid">
+        <h3 class="subSectionTitle">Industry & Technical</h3>
+        <div class="expGrid">
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Junior IT Consultant — IT Audit & Data Analytics</h3>
+              <div class="expMeta">Hoda Vasi Chowdhury &amp; Co. (Chartered Accountants) • Remote</div>
+            </div>
+            <ul class="bullets">
+              <li>Processed <b>100k+ journals</b> & full‑year ledgers for audit planning and risk assessment.</li>
+              <li>Built Power Query ingestion + Power BI anomaly views, cutting prep time <b>40–60%</b> and highlighting <b>&lt;5%</b> high‑risk transactions.</li>
+              <li>Delivered exception summaries that reduced manual journal testing by <b>30–50%</b>.</li>
+            </ul>
+          </article>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Data Analyst Intern</h3>
-        <div class="expMeta">Solar Car • Sep 2023 – May 2024</div>
-      </div>
-      <ul class="bullets">
-        <li>Extracted, transformed, and analyzed engineering telemetry data using Python (Pandas, NumPy).</li>
-        <li>Built and maintained analytical reports and dashboards to support engineering decisions.</li>
-        <li>Ensured data quality through validation, cleaning, and consistency checks.</li>
-        <li>Collaborated with cross-functional teams to define data requirements and reporting needs.</li>
-      </ul>
-    </article>
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Software Engineer Intern</h3>
+              <div class="expMeta">AC‑Robotics • Calgary, AB • Sep 2021 – Apr 2022</div>
+            </div>
+            <ul class="bullets">
+              <li>Developed Python automation for robotics control, data collection, and diagnostics.</li>
+              <li>Improved logging with structured storage and SQL‑based analytics.</li>
+            </ul>
+          </article>
+        </div>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Software Engineer Intern</h3>
-        <div class="expMeta">AC-Robotics • Calgary, AB • Sep 2021 – Apr 2022</div>
-      </div>
-      <ul class="bullets">
-        <li>Developed Python automation scripts for robotics control, data collection, and testing.</li>
-        <li>Improved data logging using structured storage and SQL-based analysis.</li>
-        <li>Worked with engineering teams to improve testing reliability and reporting accuracy.</li>
-      </ul>
-    </article>
+        <h3 class="subSectionTitle">Customer & Operations</h3>
+        <div class="expGrid">
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Customer Service Supervisor</h3>
+              <div class="expMeta">University of Calgary • Calgary, AB • Oct 2025 – Present</div>
+            </div>
+            <ul class="bullets">
+              <li>Supervise front desk operations and daily client services; handle escalations and scheduling.</li>
+            </ul>
+          </article>
 
-  </div>
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Client Services Front Desk</h3>
+              <div class="expMeta">University of Calgary • Calgary, AB • Sep 2021 – Nov 2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Front‑line support for students, staff, and visitors in a high‑traffic environment.</li>
+            </ul>
+          </article>
 
-  <!-- Customer & Operations -->
-  <h3 class="subSectionTitle">Customer & Operations</h3>
-  <div class="expGrid">
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Retail Cashier</h3>
+              <div class="expMeta">The TJX Companies, Inc. • Calgary, AB • Jul 2025 – Present</div>
+            </div>
+            <ul class="bullets">
+              <li>Processed transactions accurately and supported store operations.</li>
+            </ul>
+          </article>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Customer Service Supervisor</h3>
-        <div class="expMeta">University of Calgary • Calgary, AB • Oct 2025 – Present</div>
-      </div>
-      <ul class="bullets">
-        <li>Supervise front desk operations and support daily client services.</li>
-        <li>Handle escalations, scheduling, and workflow coordination.</li>
-        <li>Train and support staff to maintain service quality and professionalism.</li>
-      </ul>
-    </article>
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Event Staff</h3>
+              <div class="expMeta">BBW International Event Staff • Calgary, AB • Jun 2025 – Present</div>
+            </div>
+            <ul class="bullets">
+              <li>Assisted event setup, guest services, and on‑site coordination.</li>
+            </ul>
+          </article>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Client Services Front Desk</h3>
-        <div class="expMeta">University of Calgary • Calgary, AB • Sep 2021 – Nov 2025</div>
-      </div>
-      <ul class="bullets">
-        <li>Provided front-line support to students, staff, and visitors.</li>
-        <li>Handled inquiries, bookings, and administrative tasks using internal systems.</li>
-        <li>Worked in a high-traffic environment requiring clear communication and accuracy.</li>
-      </ul>
-    </article>
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Sales Associate (Seasonal)</h3>
+              <div class="expMeta">Lammle’s Western Wear • Calgary, AB • May 2024 – Aug 2024</div>
+            </div>
+            <ul class="bullets">
+              <li>Supported customers with product selection and inventory organization.</li>
+            </ul>
+          </article>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Retail Cashier</h3>
-        <div class="expMeta">The TJX Companies, Inc. • Calgary, AB • Jul 2025 – Present</div>
-      </div>
-      <ul class="bullets">
-        <li>Processed transactions accurately and efficiently at point-of-sale.</li>
-        <li>Assisted customers with purchases, returns, and inquiries.</li>
-        <li>Maintained organized checkout area and supported store operations.</li>
-      </ul>
-    </article>
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Salesperson (Contract)</h3>
+              <div class="expMeta">HomeOne • Calgary, AB • May 2023 – Jun 2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Engaged customers and explained products clearly; supported sales operations.</li>
+            </ul>
+          </article>
+        </div>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Event Staff</h3>
-        <div class="expMeta">BBW International Event Staff • Calgary, AB • Jun 2025 – Present</div>
-      </div>
-      <ul class="bullets">
-        <li>Supported event setup, guest services, and on-site coordination.</li>
-        <li>Worked in team-based environments to ensure smooth event operations.</li>
-        <li>Developed leadership, hospitality, and customer support skills.</li>
-      </ul>
-    </article>
+        <h3 class="subSectionTitle">Clubs & Leadership</h3>
+        <div class="expGrid">
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Graphic Designer</h3>
+              <div class="expMeta">ESS STEM Club • Dhaka, Bangladesh • Jan 2020 – Jun 2021</div>
+            </div>
+            <ul class="bullets">
+              <li>Designed promotional graphics and visual materials for club activities.</li>
+            </ul>
+          </article>
 
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Sales Associate (Seasonal)</h3>
-        <div class="expMeta">Lammle’s Western Wear • Calgary, AB • May 2024 – Aug 2024</div>
-      </div>
-      <ul class="bullets">
-        <li>Assisted customers with product selection and sales support.</li>
-        <li>Handled inventory organization and store presentation.</li>
-        <li>Contributed to meeting daily sales and customer service targets.</li>
-      </ul>
-    </article>
-
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Salesperson (Contract)</h3>
-        <div class="expMeta">HomeOne • Calgary, AB • May 2023 – Jun 2023</div>
-      </div>
-      <ul class="bullets">
-        <li>Engaged customers and explained products and services clearly.</li>
-        <li>Supported sales operations and client communication.</li>
-        <li>Strengthened professional communication and persuasion skills.</li>
-      </ul>
-    </article>
-
-  </div>
-
-  <!-- Clubs & Leadership -->
-  <h3 class="subSectionTitle">Clubs & Leadership</h3>
-  <div class="expGrid">
-
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Graphic Designer</h3>
-        <div class="expMeta">ESS STEM Club • Dhaka, Bangladesh • Jan 2020 – Jun 2021</div>
-      </div>
-      <ul class="bullets">
-        <li>Designed promotional graphics and visual materials for club activities.</li>
-        <li>Worked with team members to communicate ideas visually and clearly.</li>
-        <li>Developed creative, communication, and critical thinking skills.</li>
-      </ul>
-    </article>
-
-    <article class="expCard">
-      <div class="expTop">
-        <h3>Co-Founder</h3>
-        <div class="expMeta">ESS STEM Club • Bangladesh • Jan 2020 – Jun 2021</div>
-      </div>
-      <ul class="bullets">
-        <li>Co-founded a student STEM initiative focused on community engagement and learning.</li>
-        <li>Helped organize activities, manage communications, and grow the club.</li>
-        <li>Gained leadership experience in planning, coordination, and teamwork.</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
+          <article class="expCard">
+            <div class="expTop">
+              <h3>Co‑Founder</h3>
+              <div class="expMeta">ESS STEM Club • Bangladesh • Jan 2020 – Jun 2021</div>
+            </div>
+            <ul class="bullets">
+              <li>Organized activities, managed communications, and grew the club community.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
       <!-- ABOUT -->
       <section id="about" class="section">
@@ -378,8 +362,8 @@
         <div class="about">
           <p>
             I’m a Software Engineering student at the University of Calgary (Expected 2027) with a strong interest in
-            data analytics, backend systems, and machine learning. I enjoy building systems that clean, transform, and
-            analyze data and turn it into useful insights through reliable software.
+            data analytics, backend systems, and machine learning. I enjoy building systems that ingest, clean, and
+            transform data into reliable insights—using Python, SQL, Power Query, and Power BI.
           </p>
         </div>
       </section>
