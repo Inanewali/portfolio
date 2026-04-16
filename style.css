@@ -117,7 +117,7 @@ main{ max-width:1000px; margin:0 auto; padding:24px 18px 60px; }
 
 /* Avatar: styled initials instead of emoji */
 .avatar{
-  width:56px; height:56px;
+  width:80px; height:80px;
   border-radius:16px;
   display:grid; place-items:center;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -126,6 +126,14 @@ main{ max-width:1000px; margin:0 auto; padding:24px 18px 60px; }
   font-weight:700;
   color:#0b0f19;
   flex-shrink:0;
+}
+
+/* Photo avatar */
+.avatarPhoto{
+  object-fit:cover;
+  object-position: center top;
+  background: none;
+  font-size:0;
 }
 
 .cardTitle{ margin:0; font-size:16px; }
