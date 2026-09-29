@@ -3,321 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Syed Waliullah | Software & Data Portfolio</title>
+    <title>Syed Waliullah | Software & Data Engineering</title>
     <meta
       name="description"
-      content="Portfolio of Syed Waliullah — Software Engineering student focused on data analytics, Power BI, SQL, and machine learning."
+      content="Portfolio of Syed Waliullah, Software Engineering student at the University of Calgary (2027) building data pipelines, decision-support systems, and production web software."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header class="header">
-      <a class="logo" href="#top" aria-label="Home">SW</a>
+      <div class="wrap headerInner">
+        <a class="logo" href="#top" aria-label="Home"><span class="logoMark">SW</span>Syed Waliullah</a>
 
-      <button class="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="nav" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a class="btn" href="#contact">Contact</a>
-      </nav>
+        <div class="headerActions">
+          <button class="iconBtn themeBtn" aria-label="Toggle dark mode" title="Toggle theme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+          <button class="iconBtn menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
     </header>
 
-    <main id="top">
+    <main id="top" class="wrap">
       <!-- HERO -->
       <section class="hero">
-        <div class="heroText">
-          <p class="pill">Software Engineering • Data Analytics • Machine Learning</p>
-
-          <h1>Hi, I'm <span>Syed Waliullah</span>.</h1>
-
-          <p class="sub">
-            I build the pipelines that turn messy data into decisions. Software Engineering student at the
-            University of Calgary with hands‑on experience building analytics pipelines and dashboards in
-            <b>Power BI</b>, data processing in <b>Python / SQL</b>, and applied <b>machine learning</b>.
-            I focus on clean data ingestion, reproducible analysis, and practical insights that drive action.
+        <div>
+          <p class="eyebrow mono">Software Engineering · UCalgary · Class of 2027</p>
+          <h1>I turn messy data into <em>decisions</em> people can trust.</h1>
+          <p class="lede">
+            I build data pipelines, decision-support systems, and production web software. Most recently:
+            pipelines processing 100k+ financial records at a chartered accounting firm, an agentic system
+            that reads satellite and weather data to guide grazing decisions, and a live multi-user platform
+            my team shipped in 10 weeks.
           </p>
-
           <div class="heroCtas">
-            <a class="btn" href="#projects">View projects</a>
-            <a class="btnGhost" href="./resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+            <a class="btn" href="#projects">View projects →</a>
+            <a class="btnGhost" href="./resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
           </div>
-
           <div class="linksRow">
-            <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/inanewali" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:syed.waliullah@ucalgary.ca">Email</a>
+            <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/inanewali" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:syed.waliullah@ucalgary.ca">Email ↗</a>
           </div>
         </div>
 
-        <div class="heroPhotoCol">
-          <div class="profilePicWrap">
-            <img src="./avatar.jpg" alt="Syed Waliullah" class="profilePic" />
-          </div>
-          <div class="profileCaption">
-            <span class="profileName">Syed Waliullah</span>
-            <span class="profileRole">Software Engineering • UCalgary '27</span>
-          </div>
-        </div>
+        <figure class="idCard">
+          <img src="./avatar.jpg" alt="Portrait of Syed Waliullah" />
+          <dl class="idMeta">
+            <dt>Based</dt><dd>Calgary, AB</dd>
+            <dt>Degree</dt><dd>BSc Software Engg.</dd>
+            <dt>Grad</dt><dd>April 2027</dd>
+            <dt>Status</dt><dd class="status">Open to new-grad roles</dd>
+          </dl>
+        </figure>
       </section>
 
-      <!-- HIGHLIGHTS: METRICS -->
-      <section class="section">
-        <div class="metricsStrip" role="list" aria-label="Impact highlights">
-          <div class="metric" role="listitem">
-            <div class="metricVal">40–60%</div>
-            <div class="metricLabel">faster data prep (Power Query)</div>
-          </div>
-          <div class="metric" role="listitem">
-            <div class="metricVal">&lt;5%</div>
-            <div class="metricLabel">high‑risk journals flagged</div>
-          </div>
-          <div class="metric" role="listitem">
-            <div class="metricVal">30–50%</div>
-            <div class="metricLabel">less manual journal testing</div>
-          </div>
-          <div class="metric" role="listitem">
-            <div class="metricVal">~50%</div>
-            <div class="metricLabel">faster audit sampling</div>
-          </div>
-        </div>
+      <!-- METRICS -->
+      <section class="metrics reveal" aria-label="Highlights">
+        <div class="metric"><div class="metricVal">100k+</div><div class="metricLabel">financial records processed per pipeline</div></div>
+        <div class="metric"><div class="metricVal">40–60%</div><div class="metricLabel">less data-prep time at an audit firm</div></div>
+        <div class="metric"><div class="metricVal">10 wks</div><div class="metricLabel">to ship a live SaaS with a team of 6</div></div>
+        <div class="metric"><div class="metricVal">59+</div><div class="metricLabel">Azure VM types priced and modelled</div></div>
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" class="section">
         <div class="sectionHead">
+          <span class="sectionNum mono">01 / Work</span>
           <h2>Projects</h2>
-          <p>Selected academic, professional, and personal projects.</p>
+          <p>Client, team, and independent builds.</p>
         </div>
 
-        <!-- FEATURED PROJECT -->
-        <article class="project projectFeatured">
-          <div class="featuredInner">
-            <div class="featuredText">
-              <div class="projectHeader">
-                <h3>Hive – Roommate Management App</h3>
-                <span class="badge badgeLive">Live</span>
-              </div>
-              <p class="muted">
-                Full‑stack roommate management app built with a team of 6 — deployed and live. I owned the
-                <b>expenses</b>, <b>user profile</b>, and <b>settings</b> features end‑to‑end.
-              </p>
-              <ul class="bullets">
-                <li>Built expense splitting with real‑time settlement tracking using <b>Supabase</b> and React state.</li>
-                <li>Designed and implemented user profile and settings pages with auth-aware data persistence.</li>
-                <li>Chore rotation, shared grocery lists, and house announcements — all in one place, separate from personal chats.</li>
-                <li>Live at <b>hive-roomies.com</b> — free forever, no card required.</li>
-              </ul>
-              <div class="tags">
-                <span>React</span><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>Team of 6</span>
-              </div>
-              <div class="projectLinks" style="margin-top:10px;">
-                <a class="btnGhost btnAccent" href="https://hive-roomies.com" target="_blank" rel="noreferrer">Live Site ↗</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <div class="grid">
-          <!-- Grazing Intelligence Agent -->
-          <article class="project">
-            <div class="projectHeader">
-              <h3>Grazing Intelligence Agent</h3>
-              <span class="badge">In Progress</span>
-            </div>
-            <p class="muted">
-              Capstone with Agrivanna Inc. — an agentic decision-support system for grazing management.
-            </p>
+        <div class="featured">
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑01 · Capstone</span><span class="badge wip">In progress</span></div>
+            <h3>Grazing Intelligence Agent</h3>
+            <p class="projectOrg">with Agrivanna Inc.</p>
             <ul class="bullets">
-              <li>Ingests satellite (Sentinel‑2 NDVI), weather (ERA5‑Land, CHIRPS), and soil moisture (SMAP) layers and returns ranked grazing recommendations.</li>
-              <li>Separates weather‑driven from management‑driven pasture decline against each paddock's 10‑year normal, with confidence scoring and explicit "insufficient data" output.</li>
+              <li>Agentic system that ingests <b>Sentinel‑2 NDVI</b>, <b>ERA5‑Land</b>, <b>CHIRPS</b>, and <b>SMAP</b> layers and returns ranked grazing recommendations.</li>
+              <li>Separates weather‑driven from management‑driven pasture decline against each paddock's 10‑year normal, with confidence scores and explicit "insufficient data" output.</li>
             </ul>
-            <div class="tags">
-              <span>Python</span><span>LLM Tool‑Calling</span><span>Geospatial</span><span>Capstone</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://agrivanna.com/" target="_blank" rel="noreferrer">Client Site</a>
-            </div>
+            <div class="tags"><span>Python</span><span>LLM tool‑calling</span><span>Geospatial</span></div>
+            <div class="projectLinks"><a href="https://agrivanna.com/" target="_blank" rel="noreferrer">Client site ↗</a></div>
           </article>
 
-          <!-- Cloud Value Optimizer -->
-          <article class="project">
-            <h3>Cloud Value Optimizer</h3>
-            <p class="muted">
-              Cost-versus-performance analysis of Azure virtual machines from live pricing data.
-            </p>
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑02 · Team of 6</span><span class="badge live">Live</span></div>
+            <h3>Hive</h3>
+            <p class="projectOrg">Roommate management platform</p>
             <ul class="bullets">
-              <li>Automated pipeline pulling real‑time pricing for <b>59+</b> Azure VM instances via the Azure Retail Prices API.</li>
-              <li>Log‑log regression (<b>R² = 0.70</b>) in R to surface cost optimization opportunities in Power BI dashboards.</li>
+              <li>Led frontend and backend API work and Docker setup; shipped to production in <b>10 weeks</b>.</li>
+              <li>Owned expenses, profiles, and settings end‑to‑end: expense splitting with real‑time settlement on Supabase.</li>
+              <li>Extended to iOS/Android with Capacitor, reusing the web codebase.</li>
             </ul>
-            <div class="tags">
-              <span>R</span><span>Power BI</span><span>Azure</span><span>Regression</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali/Cloud_Value_Optimizer/tree/main" target="_blank" rel="noreferrer">Code</a>
-            </div>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Docker</span></div>
+            <div class="projectLinks"><a href="https://hive-roomies.com" target="_blank" rel="noreferrer">Live site ↗</a></div>
           </article>
 
-          <!-- AuditEdge -->
-          <article class="project">
-            <div class="projectHeader">
-              <h3>AuditEdge – Audit Workflow Platform</h3>
-              <span class="badge">In Progress</span>
-            </div>
-            <p class="muted">
-              SaaS platform for audit execution, from engagement setup to sign-off.
-            </p>
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑03 · Independent</span><span class="badge wip">In progress</span></div>
+            <h3>AuditEdge</h3>
+            <p class="projectOrg">Audit workflow platform</p>
             <ul class="bullets">
-              <li>Engagement setup and trial balance mapping.</li>
+              <li>SaaS for audit execution: engagement setup and trial balance mapping.</li>
               <li>Risk assessment, fieldwork automation, misstatement tracking, and sign‑off workflows with a full audit trail.</li>
             </ul>
-            <div class="tags">
-              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://auditedge-mvp-pi.vercel.app/" target="_blank" rel="noreferrer">Live Site ↗</a>
-            </div>
-          </article>
-
-          <!-- Automated Audit Sampling (In Progress) -->
-          <article class="project">
-            <div class="projectHeader">
-              <h3>Automated Audit Sampling Tool</h3>
-              <span class="badge">In Progress</span>
-            </div>
-            <p class="muted">
-              Prototype tool to automate substantive testing samples using rules and stratification.
-            </p>
-            <ul class="bullets">
-              <li>Processes <b>10k–50k+</b> transactions for targeted & random sampling.</li>
-              <li>Implements thresholds, value‑band stratification, risk‑based rules.</li>
-              <li>Ensures <b>100% traceability</b> to source ledgers; targeting <b>~50%</b> faster sampling.</li>
-            </ul>
-            <div class="tags">
-              <span>Python</span><span>Excel</span><span>ETL</span><span>Audit</span>
-            </div>
-          </article>
-
-          <!-- ETF Forecasting -->
-          <article class="project">
-            <h3>Quantitative ETF Forecasting System</h3>
-            <p class="muted">
-              ML & time‑series forecasting for sector ETFs; backtesting for strategy viability.
-            </p>
-            <ul class="bullets">
-              <li>Automated data from Yahoo Finance; modular pipeline for EDA → features → models.</li>
-              <li>Models: ARIMA, LSTM, regression & tree‑based classifiers; comparative backtesting.</li>
-              <li>Reproducible scripts and metrics reporting.</li>
-            </ul>
-            <div class="tags">
-              <span>Python</span><span>Time Series</span><span>ML</span><span>Forecasting</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/irajak/quantitative-etf-forecasting" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <!-- Business Reporting -->
-          <article class="project">
-            <h3>Business Operations Reporting System</h3>
-            <p class="muted">
-              End‑to‑end reporting for ingesting, cleaning, validating, and consolidating ops data.
-            </p>
-            <ul class="bullets">
-              <li>Python (Pandas) data quality rules & validation; repeatable ETL flows.</li>
-              <li>T‑SQL reports and scheduled analytics; reduced manual reporting effort.</li>
-            </ul>
-            <div class="tags">
-              <span>Python</span><span>SQL Server</span><span>T‑SQL</span><span>Excel</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <!-- Dishcraft -->
-          <article class="project">
-            <h3>Dishcraft – Recipe Recommendation App</h3>
-            <p class="muted">
-              Full‑stack Flask app with structured outputs and feedback loops for quality.
-            </p>
-            <ul class="bullets">
-              <li>Backend API in Flask; cleaned & normalized model outputs.</li>
-              <li>Responsive UI; error handling and iterative improvement.</li>
-            </ul>
-            <div class="tags">
-              <span>Flask</span><span>Python</span><span>HTML/CSS</span><span>API</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Maheen21/Dishcraft" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <!-- NIDS -->
-          <article class="project">
-            <h3>Network Intrusion Detection System</h3>
-            <p class="muted">
-              ML models to detect malicious traffic on the NSL‑KDD dataset.
-            </p>
-            <ul class="bullets">
-              <li>Preprocessed data with Pandas/NumPy; built Decision Tree & Random Forest.</li>
-              <li>Performance visualization, documentation, and reproducibility.</li>
-            </ul>
-            <div class="tags">
-              <span>Python</span><span>Scikit‑learn</span><span>Pandas</span><span>ML</span>
-            </div>
-          </article>
-
-          <!-- Flight Management -->
-          <article class="project">
-            <h3>Flight Management System</h3>
-            <p class="muted">
-              Backend‑oriented system with SQL database design and analytical reporting.
-            </p>
-            <ul class="bullets">
-              <li>Relational schema & reporting queries; documented structures and flows.</li>
-              <li>Analytical reports to validate system correctness.</li>
-            </ul>
-            <div class="tags">
-              <span>C++</span><span>SQL</span><span>Backend</span>
-            </div>
-            <div class="projectLinks">
-              <a href="https://github.com/Inanewali/ensf-337-term-project" target="_blank" rel="noreferrer">Code</a>
-            </div>
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span></div>
+            <div class="projectLinks"><a href="https://auditedge-mvp-pi.vercel.app/" target="_blank" rel="noreferrer">Live site ↗</a></div>
           </article>
         </div>
-      </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="section">
-        <div class="sectionHead">
-          <h2>Skills</h2>
-          <p>Based on coursework and work experience.</p>
+        <h3 class="subTitle mono">Data &amp; analytics</h3>
+        <div class="grid">
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑04</span></div>
+            <h3>Cloud Value Optimizer</h3>
+            <p class="desc">Cost-versus-performance analysis of Azure virtual machines from live pricing.</p>
+            <ul class="bullets">
+              <li>Automated pipeline pulling real‑time pricing for <b>59+</b> VM instances via the Azure Retail Prices API.</li>
+              <li>Log‑log regression (<b>R² = 0.70</b>) in R, surfaced in Power BI dashboards.</li>
+            </ul>
+            <div class="tags"><span>R</span><span>Power BI</span><span>Azure</span></div>
+            <div class="projectLinks"><a href="https://github.com/Inanewali/Cloud_Value_Optimizer/tree/main" target="_blank" rel="noreferrer">Code ↗</a></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑05</span><span class="badge wip">In progress</span></div>
+            <h3>Automated Audit Sampling Tool</h3>
+            <p class="desc">Rules-based, stratified sampling for substantive audit testing.</p>
+            <ul class="bullets">
+              <li>Processes <b>10k–50k+</b> records with value‑band stratification and risk‑based rules.</li>
+              <li>Self‑adjusting high‑value threshold (80% of max balance); traceable to source ledgers.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>Pandas</span><span>Streamlit</span></div>
+            <div class="projectLinks"><a href="https://github.com/Inanewali/Audit_App" target="_blank" rel="noreferrer">Code ↗</a></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="projectTop"><span class="mono">P‑06</span></div>
+            <h3>Quantitative ETF Forecasting</h3>
+            <p class="desc">ML and time‑series forecasting for sector ETFs, with backtesting.</p>
+            <ul class="bullets">
+              <li>Modular pipeline from Yahoo Finance data through EDA, features, and models.</li>
+              <li>ARIMA, LSTM, regression and tree‑based models compared by backtest.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>Time series</span><span>ML</span></div>
+            <div class="projectLinks"><a href="https://github.com/irajak/quantitative-etf-forecasting" target="_blank" rel="noreferrer">Code ↗</a></div>
+          </article>
         </div>
 
-        <div class="skills">
-          <div class="skillCard">
-            <h3>Programming</h3>
-            <p class="muted">Python, SQL, C++, C, C#, Java, JavaScript, TypeScript, HTML/CSS, Flask, React, Next.js</p>
+        <h3 class="subTitle mono">Earlier &amp; coursework</h3>
+        <div class="ledger">
+          <div class="ledgerRow reveal">
+            <h4>Business Operations Reporting</h4>
+            <p>Python data‑quality rules and repeatable ETL, with scheduled T‑SQL reports.</p>
+            <span class="meta mono">Python · SQL Server <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer">Code ↗</a></span>
           </div>
-          <div class="skillCard">
-            <h3>Data & Analytics</h3>
-            <p class="muted">Pandas, NumPy, Power BI (DAX, dashboards), Data Cleaning, EDA, Visualization</p>
+          <div class="ledgerRow reveal">
+            <h4>Dishcraft</h4>
+            <p>Flask recipe‑recommendation app with structured model outputs and feedback loops.</p>
+            <span class="meta mono">Flask · OpenAI API <a href="https://github.com/Maheen21/Dishcraft" target="_blank" rel="noreferrer">Code ↗</a></span>
           </div>
-          <div class="skillCard">
-            <h3>Databases</h3>
-            <p class="muted">SQL Server, MySQL, SQLite, Supabase, Data Modeling, Query Optimization</p>
+          <div class="ledgerRow reveal">
+            <h4>Network Intrusion Detection</h4>
+            <p>Decision Tree and Random Forest models detecting malicious traffic on NSL‑KDD.</p>
+            <span class="meta mono">Scikit‑learn</span>
           </div>
-          <div class="skillCard">
-            <h3>Machine Learning</h3>
-            <p class="muted">Scikit‑learn, Feature Engineering, Model Evaluation</p>
-          </div>
-          <div class="skillCard">
-            <h3>Business Tools</h3>
-            <p class="muted">Excel (PivotTables, Power Query), PowerPoint, Power Automate</p>
+          <div class="ledgerRow reveal">
+            <h4>Flight Management System</h4>
+            <p>Relational schema and reporting queries for a backend booking system.</p>
+            <span class="meta mono">C++ · SQL <a href="https://github.com/Inanewali/ensf-337-term-project" target="_blank" rel="noreferrer">Code ↗</a></span>
           </div>
         </div>
       </section>
@@ -325,131 +193,122 @@
       <!-- EXPERIENCE -->
       <section id="experience" class="section">
         <div class="sectionHead">
+          <span class="sectionNum mono">02 / Record</span>
           <h2>Experience</h2>
-          <p>Professional and leadership experience.</p>
+          <p>Industry, leadership, and clubs.</p>
         </div>
 
-        <h3 class="subSectionTitle">Industry & Technical</h3>
-        <div class="expGrid">
-          <article class="expCard">
-            <div class="expTop">
-              <h3>Junior IT Consultant — IT Audit & Data Analytics</h3>
-              <div class="expMeta">Hoda Vasi Chowdhury &amp; Co. (Chartered Accountants) • Remote • May 2025 – Aug 2025</div>
+        <div class="timeline">
+          <div class="role reveal">
+            <div class="roleWhen mono">May – Aug 2025<span class="where">Remote</span></div>
+            <div>
+              <h3>Junior IT Consultant, IT Audit &amp; Data Analytics</h3>
+              <p class="roleOrg">Hoda Vasi Chowdhury &amp; Co. (Chartered Accountants)</p>
+              <ul class="bullets">
+                <li>Built Power Automate and Power Query pipelines to ingest, validate, and process <b>100k+</b> journals and full‑year ledgers, cutting prep time <b>40–60%</b> with full traceability to source.</li>
+                <li>Built Power BI anomaly views that isolated the <b>&lt;5%</b> of high‑risk transactions, and delivered exception summaries that reduced manual journal testing by <b>30–50%</b>.</li>
+              </ul>
             </div>
-            <ul class="bullets">
-              <li>Processed <b>100k+ journals</b> & full‑year ledgers for audit planning and risk assessment.</li>
-              <li>Built Power Query ingestion + Power BI anomaly views, cutting prep time <b>40–60%</b> and highlighting <b>&lt;5%</b> high‑risk transactions.</li>
-              <li>Delivered exception summaries that reduced manual journal testing by <b>30–50%</b>.</li>
-            </ul>
-          </article>
+          </div>
 
-        </div>
-
-        <h3 class="subSectionTitle">Other Experience</h3>
-        <div class="otherExpList">
-          <div class="otherExpItem">
-            <span class="otherExpRole">Client Services Supervisor</span>
-            <span class="otherExpMeta">University of Calgary (Active Living) • Oct 2025 – Present</span>
-          </div>
-          <div class="otherExpItem">
-            <span class="otherExpRole">Client Services Front Desk</span>
-            <span class="otherExpMeta">University of Calgary • Sep 2021 – Nov 2025</span>
-          </div>
-          <div class="otherExpItem">
-            <span class="otherExpRole">Retail Cashier</span>
-            <span class="otherExpMeta">The TJX Companies • Jul 2025 – Sep 2026</span>
-          </div>
-          <div class="otherExpItem">
-            <span class="otherExpRole">Event Staff</span>
-            <span class="otherExpMeta">BBW International Event Staff • Jun 2025 – Present</span>
-          </div>
-          <div class="otherExpItem">
-            <span class="otherExpRole">Sales Associate (Seasonal)</span>
-            <span class="otherExpMeta">Lammle's Western Wear • May 2024 – Aug 2024</span>
-          </div>
-          <div class="otherExpItem">
-            <span class="otherExpRole">Salesperson (Contract)</span>
-            <span class="otherExpMeta">HomeOne • May 2023 – Jun 2023</span>
+          <div class="role reveal">
+            <div class="roleWhen mono">Oct 2025 – Present<span class="where">Calgary, AB</span></div>
+            <div>
+              <h3>Client Services Supervisor</h3>
+              <p class="roleOrg">University of Calgary, Active Living</p>
+              <ul class="bullets">
+                <li>Supervise day‑to‑day client service operations in a high‑volume campus recreation facility.</li>
+                <li>Maintain operational systems in SharePoint and implement process improvements.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <h3 class="subSectionTitle">Clubs & Leadership</h3>
-        <div class="expGrid">
-          <article class="expCard">
-            <div class="expTop">
+        <h3 class="subTitle mono">Clubs &amp; leadership</h3>
+        <div class="timeline">
+          <div class="role reveal">
+            <div class="roleWhen mono">Sep 2021 – Apr 2022<span class="where">Calgary, AB</span></div>
+            <div>
               <h3>Data Analyst</h3>
-              <div class="expMeta">AC‑Robotics (Student Club) • Calgary, AB • Sep 2021 – Apr 2022</div>
+              <p class="roleOrg">AC‑Robotics (student engineering club)</p>
+              <ul class="bullets">
+                <li>Structured SQL storage and PowerShell automation for sensor data collection and system‑health reporting.</li>
+                <li>Python automation for robotics diagnostics; SQL‑based reporting with <b>100% traceability</b> across teams.</li>
+              </ul>
             </div>
-            <ul class="bullets">
-              <li>Improved data logging efficiency by implementing structured SQL database storage and PowerShell automation for sensor data collection and system health reporting.</li>
-              <li>Developed Python-based automation for robotics control and diagnostics, integrated with Azure-compatible data pipelines.</li>
-              <li>Delivered reporting with <b>100% traceability</b> across cross-functional engineering teams using SQL-based analytics.</li>
-            </ul>
-          </article>
-          <article class="expCard">
-            <div class="expTop">
-              <h3>Visual Effects Artist</h3>
-              <div class="expMeta">UCalgary Solar Car Team • Calgary, AB • Oct 2024 – Apr 2025</div>
-            </div>
-            <ul class="bullets">
-              <li>Created 3D scenes and particle effects in Blender to enhance club video projects and visual storytelling.</li>
-              <li>Designed lighting, rendering, and compositing to produce high-quality, polished final visuals.</li>
-              <li>Collaborated with the creative team to translate concepts into finished digital environments.</li>
-            </ul>
-          </article>
-          <article class="expCard">
-            <div class="expTop">
-              <h3>Co‑Founder & Graphic Designer</h3>
-              <div class="expMeta">ESS STEM Club • Dhaka, Bangladesh • Jan 2020 – Jun 2021</div>
-            </div>
-            <ul class="bullets">
-              <li>Co‑founded the club, organized activities, and managed communications to grow the community.</li>
-              <li>Designed promotional graphics and visual materials for club events.</li>
-            </ul>
-          </article>
+          </div>
 
-          <article class="expCard">
-            <div class="expTop">
-              <h3>Duke of Edinburgh's International Award</h3>
-              <div class="expMeta">The Duke of Edinburgh's International Award Foundation • Bangladesh</div>
+          <div class="role reveal">
+            <div class="roleWhen mono">Oct 2024 – Apr 2025<span class="where">Calgary, AB</span></div>
+            <div>
+              <h3>Visual Effects Artist</h3>
+              <p class="roleOrg">UCalgary Solar Car Team</p>
+              <ul class="bullets">
+                <li>Created 3D assets and particle effects in Blender, and handled lighting, rendering, and compositing for team media.</li>
+              </ul>
             </div>
-            <ul class="bullets">
-              <li>Earned <b>Silver</b> and <b>Bronze</b> certificates through sustained commitment to volunteering, physical activity, skill development, and an expedition.</li>
-            </ul>
-          </article>
+          </div>
+
+          <div class="role reveal">
+            <div class="roleWhen mono">Jan 2020 – Jun 2021<span class="where">Dhaka, Bangladesh</span></div>
+            <div>
+              <h3>Co‑Founder &amp; Graphic Designer</h3>
+              <p class="roleOrg">ESS STEM Club</p>
+              <ul class="bullets">
+                <li>Co‑founded the club, ran activities and communications, and designed event graphics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="role reveal">
+            <div class="roleWhen mono">Award<span class="where">Bangladesh</span></div>
+            <div>
+              <h3>Duke of Edinburgh's International Award, Silver &amp; Bronze</h3>
+              <p class="roleOrg">Volunteering, physical activity, skill development, and an expedition.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subTitle mono">Other work</h3>
+        <div class="otherList">
+          <div class="otherItem"><span>Event Staff · BBW International</span><span>Jun 2025 – Present</span></div>
+          <div class="otherItem"><span>Client Services Front Desk · UCalgary</span><span>Sep 2021 – Nov 2025</span></div>
+          <div class="otherItem"><span>Retail Cashier · The TJX Companies</span><span>Jul 2025 – Sep 2026</span></div>
+          <div class="otherItem"><span>Sales Associate · Lammle's Western Wear</span><span>May – Aug 2024</span></div>
+          <div class="otherItem"><span>Salesperson · HomeOne</span><span>May – Jun 2023</span></div>
+          <div class="otherItem"><span>Intramural Sports · UCalgary</span><span>Ongoing</span></div>
         </div>
       </section>
 
-      <!-- CERTIFICATIONS -->
-      <section id="certifications" class="section">
+      <!-- SKILLS -->
+      <section id="skills" class="section">
         <div class="sectionHead">
-          <h2>Certifications</h2>
-          <p>Professional credentials and industry training.</p>
+          <span class="sectionNum mono">03 / Toolkit</span>
+          <h2>Skills</h2>
+          <p>From coursework and work experience.</p>
         </div>
+        <div class="skills">
+          <div class="skillRow"><h3 class="mono">Languages</h3><p>Python, SQL, TypeScript, JavaScript, C#, C++, C, Java, R, PowerShell</p></div>
+          <div class="skillRow"><h3 class="mono">Web &amp; backend</h3><p>React, Next.js, Flask, REST APIs, Supabase, PostgreSQL, SQL Server, Docker, Capacitor</p></div>
+          <div class="skillRow"><h3 class="mono">Data &amp; BI</h3><p>Pandas, NumPy, Power BI (DAX), Power Query, Power Automate, Excel, data cleaning &amp; validation</p></div>
+          <div class="skillRow"><h3 class="mono">ML &amp; AI</h3><p>Scikit‑learn, time‑series models, LLM tool‑calling, agentic systems, geospatial data</p></div>
+          <div class="skillRow"><h3 class="mono">Cloud</h3><p>Azure, Vercel, SharePoint, Git</p></div>
+          <div class="skillRow"><h3 class="mono">Practice</h3><p>Agile delivery, testing &amp; reliability, technical documentation, stakeholder sign‑off</p></div>
+        </div>
+
+        <h3 class="subTitle mono">Certifications</h3>
         <div class="certGrid">
-          <div class="certCard">
-            <div class="certIcon">🏅</div>
-            <div>
-              <div class="certName">Career Essentials in Data Analysis</div>
-              <div class="certIssuer">Microsoft &amp; LinkedIn • Feb 2026</div>
-              <div class="certSkills">Data Analysis, Data Visualization</div>
-            </div>
+          <div class="cert reveal">
+            <h3><a href="https://www.linkedin.com/learning/certificates/3c373941e158370504725fb696a3f1c24283c1cdd0bce3c88a451010adb7dff1" target="_blank" rel="noreferrer">Career Essentials in Data Analysis ↗</a></h3>
+            <p>Microsoft &amp; LinkedIn · Feb 2026</p>
           </div>
-          <div class="certCard">
-            <div class="certIcon">🏅</div>
-            <div>
-              <div class="certName">Data Analytics Job Simulation</div>
-              <div class="certIssuer">Deloitte Australia (Forage) • Feb 2026</div>
-              <div class="certSkills">Data Analytics</div>
-            </div>
+          <div class="cert reveal">
+            <h3><a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6994cb7dcc37a26ba906cb63_1771362608296_completion_certificate.pdf" target="_blank" rel="noreferrer">Data Analytics Job Simulation ↗</a></h3>
+            <p>Deloitte Australia (Forage) · Feb 2026</p>
           </div>
-          <div class="certCard">
-            <div class="certIcon">📜</div>
-            <div>
-              <div class="certName">GCE A‑Level & O‑Level</div>
-              <div class="certIssuer">Cambridge International Education • 2019 – 2020</div>
-              <div class="certSkills">Critical Thinking</div>
-            </div>
+          <div class="cert reveal">
+            <h3>GCE A‑Level &amp; O‑Level</h3>
+            <p>Cambridge International · 2019 – 2020</p>
           </div>
         </div>
       </section>
@@ -457,49 +316,50 @@
       <!-- ABOUT -->
       <section id="about" class="section">
         <div class="sectionHead">
+          <span class="sectionNum mono">04 / Person</span>
           <h2>About</h2>
+          <p></p>
         </div>
-
         <div class="about">
-          <p>
-            I'm a Software Engineering student at the University of Calgary (Expected 2027) with a strong interest in
-            data analytics, backend systems, and machine learning. I enjoy building systems that ingest, clean, and
-            transform data into reliable insights — using Python, SQL, Power Query, and Power BI.
-          </p>
-          <p>
-            What excites me most is the moment messy, inconsistent data becomes something you can actually trust and act on.
-            Whether it's an audit pipeline that flags risk automatically or an ML model that makes a real prediction, I care
-            about the full stack: from raw ingestion to the insight in front of a decision-maker.
-          </p>
-          <p>
-            I'm currently looking for co-op or internship opportunities in data engineering, analytics, or software development
-            for Summer/Fall 2026. If you're working on something interesting, I'd love to connect.
-          </p>
+          <div>
+            <p>
+              I'm a Software Engineering student at the University of Calgary, graduating in April 2027. I like the
+              part of engineering where messy, inconsistent data becomes something you can defend: an audit pipeline
+              where every number traces back to a source record, or a model that says "insufficient data" instead of guessing.
+            </p>
+            <p>
+              I've worked inside a chartered accounting firm, shipped a production app with a team, and I'm now building
+              a decision‑support system for an agtech client. I care about the whole path, from raw ingestion to the
+              insight in front of the person who has to act on it.
+            </p>
+            <p>
+              I'm looking for <b>new‑graduate roles for 2027</b> in software, data engineering, analytics, or technical consulting.
+            </p>
+          </div>
+          <p class="pull">Every number should trace back to a source, and every recommendation should say how sure it is.</p>
         </div>
       </section>
 
       <!-- CONTACT -->
       <section id="contact" class="section">
-        <div class="sectionHead">
-          <h2>Contact</h2>
-          <p>Best way to reach me.</p>
-        </div>
-
-        <div class="contactCard">
-          <p class="muted">Email works best:</p>
-          <a class="btn" href="mailto:syed.waliullah@ucalgary.ca">syed.waliullah@ucalgary.ca</a>
-          <p class="small muted">
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/inanewali" target="_blank" rel="noreferrer">
-              View my profile
-            </a>
-          </p>
+        <div class="contact">
+          <div>
+            <p class="mono">05 / Contact</p>
+            <h2>Hiring for 2027? <em>Let's talk.</em></h2>
+          </div>
+          <div class="contactLinks">
+            <a href="mailto:syed.waliullah@ucalgary.ca"><span>syed.waliullah@ucalgary.ca</span><span>↗</span></a>
+            <a href="https://www.linkedin.com/in/inanewali" target="_blank" rel="noreferrer"><span>LinkedIn / inanewali</span><span>↗</span></a>
+            <a href="https://github.com/Inanewali" target="_blank" rel="noreferrer"><span>GitHub / Inanewali</span><span>↗</span></a>
+            <a href="./resume.pdf" target="_blank" rel="noreferrer"><span>Resume (PDF)</span><span>↗</span></a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Syed Waliullah. Built with HTML/CSS.</p>
+    <footer class="wrap footer mono">
+      <span>© <span id="year">2026</span> Syed Waliullah</span>
+      <span>Calgary, Alberta</span>
     </footer>
 
     <script src="script.js"></script>
