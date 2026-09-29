@@ -5,17 +5,25 @@ if (year) year.textContent = new Date().getFullYear();
 // Mobile menu
 const menuBtn = document.querySelector(".menuBtn");
 const nav = document.querySelector(".nav");
+function setMenu(open) {
+  if (!menuBtn || !nav) return;
+  nav.classList.toggle("open", open);
+  document.body.classList.toggle("menuOpen", open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  menuBtn.textContent = open ? "✕" : "☰";
+}
 if (menuBtn && nav) {
-  menuBtn.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", String(isOpen));
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    setMenu(!nav.classList.contains("open"));
   });
-  nav.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuBtn.setAttribute("aria-expanded", "false");
-    })
-  );
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("click", (e) => {
+    if (nav.classList.contains("open") && !nav.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 960) setMenu(false); });
 }
 
 // Theme toggle (remembers choice when storage is available)
@@ -55,19 +63,4 @@ if ("IntersectionObserver" in window) {
   );
   sections.forEach((s) => navObs.observe(s));
 
-  // Gentle reveal on scroll
-  const revealObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          revealObs.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
-  document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
-} else {
-  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
 }
