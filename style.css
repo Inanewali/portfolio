@@ -577,3 +577,41 @@ body.menuOpen { overflow: hidden; }
   html { scroll-behavior: auto; }
   .project, .btn { transition: none; }
 }
+
+/* ---------- Scroll trail: a data packet riding the pipeline ---------- */
+body { position: relative; }
+.header, main, .footer { position: relative; z-index: 1; }
+.header { z-index: 20; }
+.dataTrail {
+  position: absolute;
+  top: 0;
+  right: max(4px, calc((100vw - var(--max)) / 2 - 92px));
+  width: 84px;
+  pointer-events: none;
+  z-index: 0;
+}
+.dataTrail svg { display: block; overflow: visible; }
+.trailBase { fill: none; stroke: var(--muted); stroke-width: 2; stroke-dasharray: 7 8; opacity: 0.55; stroke-linecap: round; }
+.trailDone { fill: none; stroke: var(--signal); stroke-width: 2.5; stroke-linecap: round; }
+.trailGlow { fill: none; stroke: var(--signal-soft); stroke-width: 12; stroke-linecap: round; }
+.packet { transition: transform 0.12s linear; }
+.packetBob { animation: bob 2.4s ease-in-out infinite; transform-origin: center; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+.packetBody { fill: var(--card); stroke: var(--ink); stroke-width: 2; }
+.packetBand { fill: var(--signal); }
+.packetLine { fill: none; stroke: var(--ink); stroke-width: 2; }
+.bit { fill: var(--signal); opacity: 0; animation: bitFloat 2.4s ease-out infinite; }
+.bit:nth-of-type(2) { animation-delay: 0.8s; }
+.bit:nth-of-type(3) { animation-delay: 1.6s; }
+@keyframes bitFloat {
+  0% { opacity: 0; transform: translate(0, 0); }
+  20% { opacity: 0.9; }
+  100% { opacity: 0; transform: translate(0, -26px); }
+}
+@media (max-width: 1180px) { .dataTrail { opacity: 0.45; } }
+@media (max-width: 720px) { .dataTrail { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .packetBob, .bit { animation: none; }
+  .bit { opacity: 0; }
+  .packet { transition: none; }
+}
