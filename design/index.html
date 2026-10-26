@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wali — Design Portfolio</title>
+<meta name="description" content="Syed Waliullah — software engineering student at the University of Calgary, designing and building tools people actually use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E8ECE5;
+    --paper-2: #DDE3D9;
+    --ink: #16302B;
+    --ink-soft: #4A5E58;
+    --mark: #F2D543;
+    --pen: #C2412D;
+    --line: #B8C2B4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #121B19; --paper-2: #1A2522; --ink: #E3EAE2; --ink-soft: #9FB0A9;
+      --mark: #8C7A16; --pen: #E8806C; --line: #2F3E3A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Literata", Georgia, serif; font-size: 18px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--pen); }
+  :focus-visible { outline: 2px solid var(--pen); outline-offset: 3px; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3, nav, .sans { font-family: "Familjen Grotesk", system-ui, sans-serif; }
+
+  /* nav */
+  nav { display: flex; justify-content: space-between; align-items: baseline; padding: 28px 0; font-size: 16px; }
+  nav .me { font-weight: 700; text-decoration: none; }
+  nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+  nav ul a { text-decoration: none; color: var(--ink-soft); }
+  nav ul a:hover { color: var(--ink); }
+
+  /* hero: an annotated sketch */
+  .hero { padding: 64px 0 96px; position: relative; }
+  .hero h1 {
+    font-size: clamp(44px, 8vw, 96px); line-height: 1.02; letter-spacing: -0.03em;
+    font-weight: 600; margin: 0; max-width: 13ch;
+  }
+  .hl { background: linear-gradient(transparent 58%, var(--mark) 58%, var(--mark) 90%, transparent 90%); }
+  .circled { position: relative; display: inline-block; }
+  .circled svg { position: absolute; inset: -14% -8%; width: 116%; height: 128%; overflow: visible; pointer-events: none; }
+  .circled path { fill: none; stroke: var(--pen); stroke-width: 2.5; stroke-linecap: round;
+    stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 1.4s .4s ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .note {
+    font-family: "Familjen Grotesk", sans-serif; font-size: 15px; line-height: 1.4;
+    color: var(--pen); max-width: 22ch; opacity: 0; animation: fade .6s 1.5s forwards;
+  }
+  @keyframes fade { to { opacity: 1; } }
+  .hero .note { position: absolute; right: 0; top: 96px; }
+  .hero .note::before { content: "↙ "; }
+  .intro { max-width: 58ch; margin-top: 40px; color: var(--ink-soft); font-size: 20px; }
+  @media (prefers-reduced-motion: reduce) {
+    .circled path { animation: none; stroke-dashoffset: 0; }
+    .note { animation: none; opacity: 1; }
+  }
+
+  /* work */
+  section { padding: 72px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 15px; font-weight: 600; color: var(--ink-soft); margin: 0 0 40px; letter-spacing: 0.01em; }
+  .case { display: grid; grid-template-columns: 1fr 1.25fr; gap: 48px; padding: 48px 0; }
+  .case + .case { border-top: 1px dashed var(--line); }
+  .case h3 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 12px; font-weight: 600; }
+  .case .ctx { font-family: "Familjen Grotesk", sans-serif; font-size: 15px; color: var(--ink-soft); margin: 0 0 20px; }
+  .case dl { margin: 0; }
+  .case dt { font-family: "Familjen Grotesk", sans-serif; font-weight: 600; font-size: 16px; margin-top: 18px; }
+  .case dd { margin: 4px 0 0; }
+  .case .tags { font-family: "Familjen Grotesk", sans-serif; font-size: 14px; color: var(--ink-soft); margin-top: 20px; }
+  .case figure { margin: 0; align-self: start; }
+  .case figure img { width: 100%; display: block; border: 1px solid var(--line); border-radius: 6px; }
+  .case figure figcaption { font-family: "Familjen Grotesk", sans-serif; font-size: 14px; color: var(--ink-soft); margin-top: 8px; }
+  /* If a screenshot hasn't been added yet, the figure disappears and text spans the row */
+  .case.no-img { grid-template-columns: 1fr; }
+  .case.no-img > div { max-width: 64ch; }
+
+  /* learning */
+  .learn { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .learn h3 { font-size: 20px; margin: 0 0 8px; font-weight: 600; }
+  .learn p { margin: 0; font-size: 17px; color: var(--ink-soft); }
+
+  /* contact */
+  .contact p.big { font-family: "Familjen Grotesk", sans-serif; font-size: clamp(28px, 4vw, 44px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 28px; max-width: 20ch; }
+  .contact ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 12px 32px; font-family: "Familjen Grotesk", sans-serif; }
+  footer { padding: 40px 0 56px; font-family: "Familjen Grotesk", sans-serif; font-size: 14px; color: var(--ink-soft); }
+
+  @media (max-width: 760px) {
+    body { font-size: 17px; }
+    .wrap { padding: 0 16px; }
+    nav ul { gap: 16px; }
+    .hero { padding: 32px 0 64px; }
+    .hero .note { position: static; margin-top: 28px; }
+    .hero .note::before { content: "↖ "; }
+    .case { grid-template-columns: 1fr; gap: 24px; }
+    .case figure { order: -1; }
+    .learn { grid-template-columns: 1fr; gap: 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="me" href="#top">Wali</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1>I design and build tools <span class="hl">people actually</span> <span class="circled">use.<svg viewBox="0 0 120 80" preserveAspectRatio="none" aria-hidden="true"><path d="M8 44 C 6 14, 70 4, 108 22 C 128 34, 110 72, 60 74 C 22 76, 2 60, 14 30"/></svg></span></h1>
+    <p class="note" aria-hidden="true">the part I care about most</p>
+    <p class="intro">I'm Syed Waliullah, a software engineering student at the University of Calgary moving deeper into UX and product design. I'm studying human-computer interaction in CPSC 481, and I bring an engineer's sense of what's buildable to every design decision.</p>
+  </header>
+
+  <section id="work">
+    <h2>Selected work</h2>
+
+    <article class="case">
+      <div>
+        <h3>Knowing how busy the gym is before you go</h3>
+        <p class="ctx">Ideate venture program, University of Calgary, fall 2026</p>
+        <dl>
+          <dt>The problem</dt>
+          <dd>Students can't tell how crowded the open gym, swim times, or fitness centre are until they arrive, so they waste trips or skip workouts.</dd>
+          <dt>Why I'm close to it</dt>
+          <dd>I've worked front desk and supervised at UCalgary Active Living since 2021. I see this frustration at the counter every week.</dd>
+          <dt>What I'm doing</dt>
+          <dd>Framing the problem, talking to the people affected, and designing a solution to pitch at the end of the program.</dd>
+        </dl>
+        <p class="tags">Problem framing · User research · Concept design</p>
+      </div>
+      <figure>
+        <img src="images/ideate.png" alt="Early concept for showing live facility busyness" onerror="this.closest('.case').classList.add('no-img'); this.parentElement.remove();">
+        <figcaption>Early concept</figcaption>
+      </figure>
+    </article>
+
+    <article class="case">
+      <div>
+        <h3>Hive: running a shared home without the group chat chaos</h3>
+        <p class="ctx">SENG 513 web development project</p>
+        <dl>
+          <dt>The problem</dt>
+          <dd>Roommates coordinate the household across scattered messages and memory, and things fall through the cracks.</dd>
+          <dt>What I did</dt>
+          <dd>Designed and built a roommate management platform as a web app and a mobile app, deciding how the core household tasks are laid out and how few steps they take.</dd>
+          <dt>What I learned</dt>
+          <dd>Shared tools have to work for the least engaged person in the house, not the most organized one.</dd>
+        </dl>
+        <p class="tags">Next.js · React · TypeScript · Supabase · Capacitor</p>
+      </div>
+      <figure>
+        <img src="images/hive.png" alt="Hive app screens" onerror="this.closest('.case').classList.add('no-img'); this.parentElement.remove();">
+        <figcaption>Hive on web and mobile</figcaption>
+      </figure>
+    </article>
+
+    <article class="case">
+      <div>
+        <h3>AuditEdge: making a dense professional workflow navigable</h3>
+        <p class="ctx">Independent project, in progress</p>
+        <dl>
+          <dt>The problem</dt>
+          <dd>An audit runs through many stages: engagement setup, trial balance mapping, risk assessment, fieldwork, and sign-off. Each has its own detail, and it's easy to lose your place.</dd>
+          <dt>What I'm doing</dt>
+          <dd>Designing the flow so auditors always know where an engagement stands and what comes next, drawing on my experience as a junior IT consultant at an audit firm.</dd>
+        </dl>
+        <p class="tags">Information architecture · Workflow design · Next.js · Supabase</p>
+      </div>
+      <figure>
+        <img src="images/auditedge.png" alt="AuditEdge workflow screens" onerror="this.closest('.case').classList.add('no-img'); this.parentElement.remove();">
+        <figcaption>Engagement workflow</figcaption>
+      </figure>
+    </article>
+
+    <article class="case">
+      <div>
+        <h3>Graphic design for the UCalgary Solar Car Team</h3>
+        <p class="ctx">Graphic designer, 2024–2025</p>
+        <dl>
+          <dt>What I did</dt>
+          <dd>Created visual materials for a student engineering team, working to deadlines and keeping a consistent look across everything the team put out.</dd>
+        </dl>
+        <p class="tags">Visual design · Branding</p>
+      </div>
+      <figure>
+        <img src="images/solar-car.png" alt="Solar Car Team graphics" onerror="this.closest('.case').classList.add('no-img'); this.parentElement.remove();">
+        <figcaption>Team graphics</figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <section id="learning">
+    <h2>How I'm learning</h2>
+    <div class="learn">
+      <div>
+        <h3>CPSC 481</h3>
+        <p>Human-Computer Interaction at UCalgary: user-centred design, prototyping, and usability evaluation.</p>
+      </div>
+      <div>
+        <h3>Five years at a front desk</h3>
+        <p>Supervising client services at Active Living has taught me to watch where people get stuck, and to fix the process rather than blame the person.</p>
+      </div>
+      <div>
+        <h3>Teaching design early</h3>
+        <p>I co-founded a STEM club at my school in Dhaka that taught about 30 students graphic design and tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="big">Have a project, a role, or feedback on my work? I'd like to hear it.</p>
+    <ul>
+      <li><a href="mailto:syed.waliullah@ucalgary.ca">syed.waliullah@ucalgary.ca</a></li>
+      <li><a href="https://www.linkedin.com/in/inanewali">LinkedIn</a></li>
+      <li><a href="https://github.com/inanewali">GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>Syed Waliullah · Calgary, Alberta</footer>
+</div>
+</body>
+</html>
